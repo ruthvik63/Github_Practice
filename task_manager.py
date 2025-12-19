@@ -8,6 +8,9 @@ class Task:
     def mark_complete(self):
         self.is_completed = True
         print(f"Task '{self.title}' is now complete.")
+    def delete_task(self):
+        print(f"Deleting task: {self.title}")
+        del self
 
 class WorkTask(Task):
     """Inheritance example: A specific type of task."""
